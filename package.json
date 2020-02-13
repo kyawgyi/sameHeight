@@ -1,0 +1,25 @@
+{
+  "name": "same_height_jquery_plugin",
+  "version": "1.0.0",
+  "description": "adjust height of the boxes",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyawgyi/sameHeight.git"
+  },
+  "keywords": [
+    "adjust",
+    "same",
+    "height",
+    "box"
+  ],
+  "author": "kyaw gyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyawgyi/sameHeight/issues"
+  },
+  "homepage": "https://github.com/kyawgyi/sameHeight#readme"
+}

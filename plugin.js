@@ -6,7 +6,7 @@ $.fn.adjustHeight = function(options) {
   this.each(function () {    
     var height = $(this).outerHeight();
     var offset = $(this).offset();
-    var key = "p".concat(offset.top);
+    var key = "p".concat(Math.ceil(offset.top));
     if (sameHeightGlobalData.hasOwnProperty(key)) {
       if (sameHeightGlobalData[key] < height) {
         sameHeightGlobalData[key] = height;
@@ -15,10 +15,9 @@ $.fn.adjustHeight = function(options) {
       sameHeightGlobalData[key] = height;
     }
   });
-  console.log(this);
   this.each(function () {
     var offset = $(this).offset();
-    var key = "p".concat(offset.top);
+    var key = "p".concat(Math.ceil(offset.top));
       if(sameHeightGlobalData.hasOwnProperty(key)) {
         $(this).addClass(key);             
       }
