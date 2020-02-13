@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<style type="text/css">
+		.box{
+			padding:10px;
+			border:1px solid #ddd;
+			margin-top:20px;
+		}
+
+		.code-view{
+			background: #ddd;
+			padding:15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center"><u>Same height Jquery Plugin</u></h1>
+		<br/><br/><br/><strong>Plugin will adjust the height</strong>
+		<p>
+			This plugin can adjust the height of the box these are existing in same row.
+			plugin check the y position of the box and adjust the height for boxes at same y positon.
+			div box in same container can use same selector class. suggest to use different class name for nested level boxes
+		</p>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="same-height box">
+					<div>
+						<h2>Lorem Ipsum is si</h2>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+					</div>					
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Nested Level</h3>
+						</div>						
+						<div class="col-md-4">
+							<div class="level2-group1 box">
+								Lorem Ipsum is simply dummy text of the printing and typesetting
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="level2-group1 box">
+								Lorem Ipsum is 
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="level2-group1 box">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry
+							</div>
+						</div>
+					</div>
+				</div>
+				<strong>Read More</strong>
+			</div>
+			<div class="col-md-4">
+				<div class="same-height box">
+					<h2>Lorem Ipsum is si</h2>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining It has survived not only five centuries, but also the leap into electronic typesetting, remaining It has survived not only five centuries, but also the leap into electronic typesetting, remaining It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Nested Level</h3>
+						</div>						
+						<div class="col-md-4">
+							<div class="level2-group2 box">
+								Lorem Ipsum is simply dummy text 
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="level2-group2 box">
+								Lorem Ipsum is 
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="level2-group2 box">
+								Lorem Ipsum is simply dummy 
+							</div>
+						</div>
+					</div>
+				</div>
+				<strong>Read More</strong>
+			</div>
+			<div class="col-md-4">
+				<div class="same-height box">
+					<h2>Lorem Ipsum is si</h2>
+					Lorem Ipsum is simply dummy text 
+				</div>
+				<strong>Read More</strong>
+			</div>
+			<div class="col-md-4">
+				<div class="same-height box">
+					<h2>Lorem Ipsum is si</h2>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+				</div>
+				<strong>Read More</strong>
+			</div>
+			<div class="col-md-4">
+				<div class="same-height box">
+					<h2>Lorem Ipsum is si</h2>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+				</div>
+				<strong>Read More</strong>
+			</div>
+			<div class="col-md-4">
+				<div class="same-height box">
+					<h2>Lorem Ipsum is si</h2>
+				</div>
+				<strong>Read More</strong>
+			</div>
+		</div>
+		<br/><br/><br/><br/>
+		<h2>Code Preview</h2>
+		<div class="code-view">
+			&lt;script type=&quot;text/javascript&quot;&gt;<br/>				
+				&nbsp;&nbsp;&nbsp;$(&quot;.same-height&quot;).adjustHeight();<br/>
+				&nbsp;&nbsp;&nbsp;//if you need min height for the box 2<br/>
+				&nbsp;&nbsp;&nbsp;$(&quot;.same-height&quot;).adjustHeight({minHeight:200});<br/>
+			&lt;/script&gt;<br/>
+		</div>
+		<br/><br/><br/><br/>
+	</div>
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="plugin.js"></script>
+	<script type="text/javascript">
+		$(".level2-group2").adjustHeight();
+		$(".level2-group1").adjustHeight();
+		$(".same-height").adjustHeight();
+	</script>
+</body>
+</html>
