@@ -1,6 +1,6 @@
 {
   "name": "same_height_jquery_plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "adjust height of the boxes",
   "main": "plugin.js",
   "scripts": {
